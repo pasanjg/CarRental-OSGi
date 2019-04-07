@@ -1,0 +1,105 @@
+package client;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Scanner;
+
+import javax.jws.soap.SOAPBinding;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+
+import carservice.CarService;
+import carservice.CarServiceImpl;
+
+public class Activator implements BundleActivator {
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext)
+	 */
+	ServiceReference serviceReference;
+
+	static int j=0;
+	
+	public void start(BundleContext bundleContext) throws Exception {
+		System.out.println("Starting Car Rental Service...");
+		serviceReference = bundleContext.getServiceReference(CarService.class.getName());
+		CarService carService = (CarService) bundleContext.getService(serviceReference);
+
+		int num = 0;
+		Scanner sc = new Scanner(System.in);
+
+		if(j==0) {
+			System.out.println("Please re run the bundle");
+		}
+		String regNo = null;
+		
+		while (j!=0) {
+			do {
+				System.out.println("--------------------------------");
+				System.out.println("Main Menu");
+				System.out.println("1.Add a Car");
+				System.out.println("2.Reserved a Car");
+				System.out.println("3.Remove Car from Reserved List");
+				System.out.println("4.Remove a Car from System");
+				System.out.println("99.Exit");
+				System.out.println("--------------------------------");
+				System.out.print("Please select a Number: ");
+				num = sc.nextInt();
+			} while (num != 1 && num != 2 && num !=3 && num != 4 && num !=99);
+
+			
+			if(num == 99)
+				break;
+			
+			
+			switch (num) {
+			case 1:
+				//carService.addNewCar();
+				break;
+			case 2:
+				System.out.println();
+				carService.displayAvailableCars();
+				System.out.print("Please Enter Registration Number: ");
+				regNo = sc.next();
+				carService.reserveCar(regNo);
+				break;
+			case 3:
+				System.out.println();
+				carService.displayReservedCars();
+				System.out.print("Please Enter Registration Number: ");
+				regNo = sc.next();
+				carService.addAvailableCar(regNo);
+				break;
+			default:
+				System.out.println();
+				carService.displayAllCars();
+				System.out.print("Please Enter Registration Number: ");
+				regNo = sc.next();
+				carService.removeCar(regNo);
+				break;
+			}
+			
+		}
+		
+		
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
+	 */
+	public void stop(BundleContext bundleContext) throws Exception {
+		System.out.println("Stop client");
+		j++;//for fixing console input error
+		bundleContext.ungetService(serviceReference);
+	}
+
+}

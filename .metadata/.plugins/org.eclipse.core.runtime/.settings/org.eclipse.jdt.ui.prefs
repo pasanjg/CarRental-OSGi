@@ -1,0 +1,15 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="servicepublish.ServicePublish"><rhs name\="servicepublish.ServicePublishImpl"/></lhs><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.io.FileWriter"/><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.io.FileWriter"/><rhs name\="java.util.Scanner"/></lhs><lhs name\="fileoperator.CSVFile"><rhs name\="fileoperator.CSVFile"/></lhs><lhs name\="java.lang.Appendable"><rhs name\="java.io.FileWriter"/></lhs><lhs name\="java.io.Flushable"><rhs name\="java.io.FileWriter"/></lhs><lhs name\="java.io.Writer"><rhs name\="java.io.FileWriter"/></lhs><lhs name\="carservice.CarService"><rhs name\="carservice.CarServiceImpl"/></lhs><lhs name\="carservice.Car"><rhs name\="carservice.Car"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.RandomAccess"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.HashMap"/><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractCollection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.ArrayList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="client.GUIBuilder"><rhs name\="client.GUIBuilder"/></lhs><lhs name\="java.awt.LayoutManager"><rhs name\="java.awt.FlowLayout"/></lhs><lhs name\="java.io.File"><rhs name\="java.io.File"/></lhs><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.util.AbstractMap"><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.util.HashMap"><rhs name\="java.util.HashMap"/></lhs></history>
+content_assist_number_of_computers=21
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=16
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

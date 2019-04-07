@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1552799388300_0" label="Java Main Sources" name="Java Main Sources">
+<item elementID="=ServiceSubscriber/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ServicePublish/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1552799388337_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1552799422001_2" label="Window Working Set" name="Aggregate for window 1552799422001"/>
+</workingSetManager>
